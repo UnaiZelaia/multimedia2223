@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SignIn</string>
+
+    <!-- strings.xml -->
+    <string name="username">
+        Username
+    </string>
+</resources>

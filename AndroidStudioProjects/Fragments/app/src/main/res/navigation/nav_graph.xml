@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onboardingStart">
+    <fragment
+        android:id="@+id/onboardingStart"
+        android:name="com.example.fragments.OnboardingStart"
+        android:label="fragment_onboarding_start"
+        tools:layout="@layout/fragment_onboarding_start" >
+        <action
+            android:id="@+id/action_onboardingStart_to_onboarding2"
+            app:destination="@id/onboarding2"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            />
+        <action
+            android:id="@+id/action_onboardingStart_to_onboarding3"
+            app:destination="@id/onboarding3"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@animator/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding2"
+        android:name="com.example.fragments.Onboarding2"
+        android:label="fragment_onboarding2"
+        tools:layout="@layout/fragment_onboarding2" >
+        <action
+            android:id="@+id/action_onboarding2_to_onboarding3"
+            app:destination="@id/onboarding3"
+
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding3"
+        android:name="com.example.fragments.Onboarding3"
+        android:label="fragment_onboarding3"
+        tools:layout="@layout/fragment_onboarding3"
+
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right"/>
+    <fragment
+        android:id="@+id/onboardingEnd"
+        android:name="com.example.fragments.OnboardingEnd"
+        android:label="fragment_onboarding_end"
+        tools:layout="@layout/fragment_onboarding_end" />
+</navigation>

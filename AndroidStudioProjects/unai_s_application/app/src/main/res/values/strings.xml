@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">unai_s_application</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+<string name="lbl_sign_in">Sign in</string>
+<string name="lbl_username">Username</string>
+<string name="msg_don_t_have_an_a">Don\u2019t have an account?</string>
+<string name="lbl_sign_up">SIGN UP</string>
+<string name="lbl_password">Password</string>
+<string name="msg_forgot_your_pas">Forgot your password?</string>
+<string name="lbl_log_in">LOG IN</string>
+</resources>
