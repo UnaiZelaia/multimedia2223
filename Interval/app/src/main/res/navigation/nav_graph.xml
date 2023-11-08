@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="unai.zz.interval.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_signUp"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_login_to_mainPage"
+            app:destination="@id/mainPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUp"
+        android:name="unai.zz.interval.SignUp"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUp_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainPage"
+        android:name="unai.zz.interval.MainPage"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPage_to_newInterval"
+            app:destination="@id/newInterval" />
+        <action
+            android:id="@+id/action_mainPage_to_intervalExecutor"
+            app:destination="@id/intervalExecutor" />
+    </fragment>
+    <fragment
+        android:id="@+id/newInterval"
+        android:name="unai.zz.interval.NewInterval"
+        android:label="fragment_new_interval"
+        tools:layout="@layout/fragment_new_interval" />
+    <fragment
+        android:id="@+id/intervalExecutor"
+        android:name="unai.zz.interval.IntervalExecutor"
+        android:label="fragment_interval_executor"
+        tools:layout="@layout/fragment_interval_executor" />
+</navigation>

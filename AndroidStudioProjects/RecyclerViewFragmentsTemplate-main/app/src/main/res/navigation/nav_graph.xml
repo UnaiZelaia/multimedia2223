@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/recyclerFragment"
-        android:name="eus.urko.recyclerviewfragments.RecyclerFragment"
+        android:name="eus.urko.roomAriketa.RecyclerFragment"
         android:label="fragment_recycler"
         tools:layout="@layout/fragment_recycler" >
         <action
@@ -19,12 +19,12 @@
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
-        android:name="eus.urko.recyclerviewfragments.DetailFragment"
+        android:name="eus.urko.roomAriketa.DetailFragment"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
     <fragment
         android:id="@+id/newElementFragment"
-        android:name="eus.urko.recyclerviewfragments.NewElementFragment"
+        android:name="eus.urko.roomAriketa.NewElementFragment"
         android:label="fragment_new_element"
         tools:layout="@layout/fragment_new_element" />
 </navigation>

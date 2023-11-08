@@ -24,7 +24,6 @@ public class Detail extends Fragment {
 
     private FragmentDetailBinding binding;
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

@@ -1,8 +1,14 @@
 package com.example.masterdetailexercise;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
 import java.util.ArrayList;
 
+@Entity(tableName = "champion")
 public class Champion {
+    @PrimaryKey(autoGenerate = true)
+            int id;
 
     String name;
     String position;

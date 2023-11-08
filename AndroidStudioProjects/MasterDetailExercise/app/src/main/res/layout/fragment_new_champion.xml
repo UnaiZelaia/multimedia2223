@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/newChampName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Champion name"
+        android:inputType="text"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/newChampRegion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Region"
+        android:inputType="text"
+        android:textSize="32sp" />
+
+    <Spinner
+        android:id="@+id/newChampPosition"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:entries="@array/positions"
+        android:scrollbarSize="32sp" />
+
+    <EditText
+        android:id="@+id/newChampWR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Win rate"
+        android:inputType="numberDecimal"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/newChampDesc"
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/newChampionButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Add new champion" />
+</LinearLayout>

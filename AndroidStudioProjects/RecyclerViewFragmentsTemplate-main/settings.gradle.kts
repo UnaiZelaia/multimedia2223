@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "RecyclerViewFragments"
+rootProject.name = "roomAriketa"
 include(":app")
  

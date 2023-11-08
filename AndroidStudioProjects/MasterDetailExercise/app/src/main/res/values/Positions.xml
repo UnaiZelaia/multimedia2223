@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="positions">
+        <item>Top lane</item>
+        <item>Bot lane</item>
+        <item>Support</item>
+        <item>Jungle</item>
+        <item>Mid lane</item>
+    </string-array>
+</resources>

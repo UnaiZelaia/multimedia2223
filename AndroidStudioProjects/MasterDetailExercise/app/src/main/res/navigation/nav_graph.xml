@@ -13,10 +13,18 @@
         <action
             android:id="@+id/action_recycler_to_detail"
             app:destination="@id/detail" />
+        <action
+            android:id="@+id/action_recycler_to_newChampion"
+            app:destination="@id/newChampion" />
     </fragment>
     <fragment
         android:id="@+id/detail"
         android:name="com.example.masterdetailexercise.Detail"
         android:label="fragment_detail"
         tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/newChampion"
+        android:name="com.example.masterdetailexercise.NewChampion"
+        android:label="fragment_new_champion"
+        tools:layout="@layout/fragment_new_champion" />
 </navigation>

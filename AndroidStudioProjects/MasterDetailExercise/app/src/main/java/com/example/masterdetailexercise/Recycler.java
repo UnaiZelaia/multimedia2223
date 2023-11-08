@@ -70,6 +70,13 @@ public class Recycler extends Fragment {
             }
         });
 
+        binding.newChampButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                navController.navigate(R.id.action_recycler_to_newChampion);
+            }
+        });
+
     }
 
     class ChampionViewHolder extends RecyclerView.ViewHolder{
